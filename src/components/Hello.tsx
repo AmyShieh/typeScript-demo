@@ -57,9 +57,9 @@ function infiniteLoop(): never {
 // object is a type that represent the non-primitive type, i.e. any thing that is not number, string, boolean, symbol, null, or undefined.
 // With object type, APIs like Object.create can be better represented. For example:
 
-declare function create(o: object | null): void;
-create({ prop: 0 }); //ok
-create(null); //ok
+declare function createSomething(o: Object | null): void;
+createSomething({ prop: 0 }); //ok
+createSomething(null); //ok
 
 // create(42) // error
 // create("string") //Error
@@ -90,12 +90,10 @@ let someValue2: any = "this is a string";
 
 let strLength2: number = (someValue2 as string).length;
 
+interface HelloProps {compiler: string; framework: string;}
 
-export interface HelloProps {compiler: string; framework: string;}
-
-export class Hello extends React.Component<HelloProps, {}> {
+export class Hello extends React.PureComponent<HelloProps> {
     render() {
-        console.log(c);
         return (
             <div>
                 <p style={{ color }}>{isDone ? "ture" : 'false'}</p>
