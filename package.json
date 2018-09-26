@@ -1,33 +1,23 @@
 {
   "name": "typescript-demo",
-  "version": "1.0.0",
-  "description": "typescript-demo",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --config webpack.config.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AmyShieh/typeScript-demo.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AmyShieh/typeScript-demo/issues"
-  },
-  "homepage": "https://github.com/AmyShieh/typeScript-demo#readme",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "@types/react": "^16.4.12",
-    "@types/react-dom": "^16.0.7",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "webpack": "^4.17.1"
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-scripts-ts": "2.17.0"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
   },
   "devDependencies": {
-    "awesome-typescript-loader": "^5.2.0",
-    "source-map-loader": "^0.2.4",
-    "typescript": "^3.0.1",
-    "webpack-cli": "^3.1.0"
+    "@types/jest": "^23.3.2",
+    "@types/node": "^10.11.0",
+    "@types/react": "^16.4.14",
+    "@types/react-dom": "^16.0.7",
+    "typescript": "^3.0.3"
   }
 }
